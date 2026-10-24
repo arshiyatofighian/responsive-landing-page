@@ -367,10 +367,16 @@ header {
 .propertyList {
   padding-top: 80px;
   padding-bottom: 100px;
+  background-image: linear-gradient(#ffffff, #f0effb);
+}
+
+.propertyTitle {
+  gap: 16px;
 }
 
 .propertyMenu {
   margin: 72px 0 48px 0;
+  width: 100%;
 }
 
 .menu {
@@ -389,9 +395,14 @@ header {
   width: 115px;
   background-color: transparent;
   border: none;
+  outline: none;
   opacity: 0.5;
   cursor: pointer;
   stroke: #100a55;
+  transition:
+    all 250ms,
+    border 0s !important;
+  border-radius: 6px;
 }
 
 .searchBox {
@@ -411,22 +422,217 @@ header {
   width: 100%;
 }
 
+.card {
+  width: max-content;
+}
+
+.card_container {
+  padding-left: 7.5px;
+}
+
+.popular {
+  z-index: 2;
+  left: 0;
+  top: 184px;
+}
+
+.like {
+  z-index: 20;
+  box-sizing: content-box;
+  padding: 10px;
+  border: 2px solid #e8e6f9;
+  border-radius: 100%;
+  right: 24px;
+  top: 32px;
+  cursor: pointer;
+}
+
+.like:hover {
+  transform: scale(1.1);
+}
+
+.card_discription {
+  background-color: #fff;
+  border: solid 1px #f0effb;
+  border-top: none;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  padding: 32px 24px;
+}
+
+.price {
+  margin-bottom: 4px;
+}
+
+.cards {
+  gap: 40px;
+  flex-wrap: wrap;
+  row-gap: 50px;
+}
+
+.showMore {
+  background-color: #100a55;
+  color: #ffffff;
+  padding: 16px 32px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  margin-top: 48px;
+  width: fit-content;
+}
+
+.Tenants {
+  background-color: #100a55;
+  width: 100%;
+  padding-block: 100px;
+}
+
+.headingTitle {
+  width: 444px;
+  line-height: 140%;
+}
+
+.headingText {
+  width: 406px;
+  line-height: 160%;
+}
+
+.Tenantscards {
+  gap: 32px;
+  overflow-x: auto;
+  padding: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #fff;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #100a55;
+  border: 1px solid white;
+  border-radius: 9999px;
+}
+/* .Tenantscards
+.Tenantscards
+.Tenantscards
+.Tenantscards */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+.Tenantscard {
+  padding: 20px;
+  width: 536px;
+  height: 194px;
+}
+
+.bg {
+  background-color: #fff;
+  border-radius: 8px;
+  width: 100%;
+  height: 100%;
+}
+
+.Tenantslogo {
+  background-color: #100a55;
+  width: 64px;
+  height: 64px;
+  border-radius: 100%;
+  z-index: 2;
+}
+
+.Tenantslogowhite {
+  background-color: #e8e6f9;
+  outline: 4px solid #e0def7;
+  outline-offset: 4px;
+  width: 56px;
+  height: 56px;
+  border-radius: 100%;
+  z-index: 2;
+}
+
+.Tenantslogopurpul {
+  background-color: #ffffff;
+  border: 4px solid #e0def7;
+  width: 64px;
+  height: 64px;
+  border-radius: 100%;
+  z-index: 2;
+}
+
+.Tenantscard_texts {
+  width: 384px;
+  gap: 16px;
+  height: 130px;
+}
+
+.cta {
+  padding-block: 64px 80px;
+  width: 100%;
+  background-image: linear-gradient(
+    to right,
+    #f7f7fd 50%,
+    #f7f7fd,
+    #f7f7fd 50%
+  );
+}
+
+.status {
+  gap: 52px;
+}
+
+.cta_inputs {
+  background-color: #fff;
+  width: 543px;
+  /* margin-bottom: 24px; */
+  border-radius: 8px;
+  padding: 20px 24px;
+}
+
+#emaliInput {
+  font-size: 18px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: 100%;
+}
+
+button[type="submit"] {
+  background-color: #7065f0;
+  padding: 12px 40px;
+  border: none;
+  border-radius: 8px;
+}
+
 .click {
+  stroke: #7065f0;
   background-color: #fff;
   border: 2px solid #e0def7;
-  border-radius: 6px;
   color: #7065f0;
   opacity: 1;
-  stroke: #7065f0;
 }
 .w-100 {
   width: 100%;
+}
+
+.z {
+  z-index: 2;
+}
+
+.mgblock16 {
+  margin-block: 16px;
 }
 
 .hline {
   width: 100%;
   height: 1px;
   background-color: #e0def7;
+}
+
+.bgline {
+  background-color: #312f4b;
+  height: 1.5px;
 }
 
 .line {
@@ -439,8 +645,13 @@ header {
   line-height: 100%;
 }
 
+.lineheigth160 {
+  line-height: 160%;
+}
+
 .container {
-  width: 85%;
+  max-width: 1410px;
+  width: 90%;
   height: 100%;
 }
 
@@ -448,8 +659,32 @@ header {
   display: flex;
 }
 
+.w_100 {
+  width: 100%;
+}
+
 .textColor {
   color: #000929;
+}
+
+.bgcolorp {
+  background-color: #7065f0;
+}
+
+.mgb8 {
+  margin-bottom: 8px;
+}
+
+.mgb16 {
+  margin-bottom: 16px;
+}
+
+.mgb24 {
+  margin-bottom: 24px;
+}
+
+.mgb32 {
+  margin-bottom: 32px;
 }
 
 .secondryColor {
@@ -464,11 +699,27 @@ header {
   color: #fff;
 }
 
+.grayColor {
+  color: #9ea3ae;
+}
+
+.p_color {
+  color: #7065f0;
+}
+
 .opacity {
   opacity: 0.5;
 }
+
+.opacity20 {
+  opacity: 0.2;
+}
 .opacity70 {
   opacity: 0.7;
+}
+
+.opacity100 {
+  opacity: 1 !important;
 }
 .size16 {
   font-size: 16px;
@@ -484,6 +735,10 @@ header {
 
 .size20 {
   font-size: 20px;
+}
+
+.size24 {
+  font-size: 24px;
 }
 
 .size40 {
@@ -523,11 +778,21 @@ header {
   gap: 5px;
 }
 
+.gap8 {
+  gap: 8px;
+}
+
 .gap10 {
   gap: 10px;
 }
+.gap16 {
+  gap: 16px;
+}
 .gap20 {
   gap: 20px;
+}
+.gap24 {
+  gap: 24px;
 }
 
 .gap30 {
@@ -541,6 +806,10 @@ header {
 }
 .gap60 {
   gap: 60px;
+}
+
+.gap64 {
+  gap: 64px;
 }
 
 .gap70 {
@@ -564,6 +833,10 @@ header {
   position: absolute;
 }
 
+.w_max {
+  width: max-content;
+}
+
 @keyframes wid {
   0% {
     width: 0;
@@ -571,16 +844,6 @@ header {
 
   100% {
     width: 70%;
-  }
-}
-
-@keyframes backwid {
-  0% {
-    width: 70%;
-  }
-
-  100% {
-    width: 0;
   }
 }
 
@@ -612,9 +875,13 @@ header {
   opacity: 0;
 }
 
-@media (max-width: 880px) {
+@media (max-width: 920px) {
   .desktop {
     display: none !important;
+  }
+
+  .mainHeader .container {
+    justify-content: center;
   }
 
   .mobile-direction {
@@ -623,6 +890,19 @@ header {
   .logo {
     width: 100%;
     height: 580px;
+  }
+  .propertyMenu {
+    flex-direction: column-reverse;
+    gap: 24px;
+    align-items: center;
+  }
+
+  .cards {
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    gap: 20px;
+    width: 100%;
+    padding-bottom: 20px;
   }
 
   .benefits {
@@ -675,9 +955,87 @@ header {
     width: 100%;
   }
 
+  .propertyList {
+    padding-top: 0;
+  }
+
   .searchLocation {
     position: static !important;
     z-index: 1 !important;
+  }
+
+  .buttons {
+    width: 96px;
+    padding: 11px 11px;
+  }
+
+  .searchBox {
+    width: 100%;
+  }
+  .showMore {
+    width: 100%;
+  }
+
+  .heading {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .headingText,
+  .headingTitle {
+    width: 100%;
+    text-align: center;
+  }
+
+  .Tenantscards {
+    flex-direction: column;
+    gap: 24px;
+    padding: 0;
+    overflow-x: visible;
+  }
+
+  .mgmobile {
+    margin-left: 24px;
+  }
+
+  .wrap {
+    text-wrap: wrap;
+  }
+
+  .Tenantscard {
+    padding-inline: 0;
+    width: 100%;
+    justify-content: start;
+    height: max-content;
+  }
+
+  .Tenantscard_texts {
+    width: 100%;
+    height: max-content;
+  }
+
+  .status {
+    flex-direction: column;
+  }
+
+  .mobile-line {
+    width: 100%;
+    height: 1px;
+  }
+
+  .cta_inputs {
+    width: 100%;
+  }
+
+  .cta,
+  .Tenants,
+  .propertyList,
+  .Benefit {
+    padding-block:  48px;
+  }
+
+  .cta h6{
+    font-size: 32px;
   }
 }
 @media (min-width: 881px) {

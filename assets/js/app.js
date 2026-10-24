@@ -5,6 +5,9 @@ let btnMenu = document.getElementById("btnMenu");
 let rentbtn = document.getElementById("rentbtn");
 let buytbtn = document.getElementById("buytbtn");
 let selltbtn = document.getElementById("selltbtn");
+let rentbtn2 = document.getElementById("rentbtn2");
+let buybtn2 = document.getElementById("buybtn2");
+let sellbtn2 = document.getElementById("sellbtn2");
 // const mobileMenu = () => {
 //   menu.classList.add("show");
 //   btnMenu.style.transform = "rotate(90deg)";
@@ -15,7 +18,6 @@ btnMenu.addEventListener("click", () => {
   if (menu.classList.contains("show"))
     btnMenu.style.transform = "rotate(90deg)";
   else {
-  
     btnMenu.style.transform = "rotate(0deg)";
   }
   //   e.stopPropagation();
@@ -70,4 +72,22 @@ selltbtn.addEventListener("click", () => {
     properties.classList.remove("show");
     properties2.classList.remove("showSearch");
   }
+});
+
+rentbtn2.addEventListener("click", () => {
+  rentbtn2.classList.add("click");
+  buybtn2.classList.remove("click");
+  sellbtn2.classList.remove("click");
+});
+
+buybtn2.addEventListener("click", () => {
+  buybtn2.classList.add("click");
+  rentbtn2.classList.remove("click");
+  sellbtn2.classList.remove("click");
+});
+
+sellbtn2.addEventListener("click", () => {
+  sellbtn2.classList.add("click");
+  buybtn2.classList.remove("click");
+  rentbtn2.classList.remove("click");
 });
