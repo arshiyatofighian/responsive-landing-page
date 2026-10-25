@@ -605,6 +605,22 @@ button[type="submit"] {
   border-radius: 8px;
 }
 
+footer{
+  padding-top: 80px;
+}
+
+.footerMenu{
+  height: 432px;
+  flex-wrap: wrap;
+  gap: 48px;
+  column-gap: 88px;
+  width: 80%;
+}
+
+.top_footer{
+  padding-bottom: 48px;
+}
+
 .click {
   stroke: #7065f0;
   background-color: #fff;
@@ -633,6 +649,12 @@ button[type="submit"] {
 .bgline {
   background-color: #312f4b;
   height: 1.5px;
+}
+
+.bgline1{
+  background-color: #E8E6F9;
+  height: 1.5px;
+  margin-bottom: 32px;
 }
 
 .line {
@@ -714,6 +736,9 @@ button[type="submit"] {
 .opacity20 {
   opacity: 0.2;
 }
+.opacity30 {
+  opacity: 0.3;
+}
 .opacity70 {
   opacity: 0.7;
 }
@@ -761,6 +786,9 @@ button[type="submit"] {
 .align_c {
   align-items: center;
 }
+.align_start {
+  align-items: start;
+}
 
 .justify_c {
   justify-content: center;
@@ -772,6 +800,10 @@ button[type="submit"] {
 
 .flex_d {
   flex-direction: column;
+}
+
+.text_dec{
+  text-decoration: none;
 }
 
 .gap5 {
@@ -823,6 +855,10 @@ button[type="submit"] {
 }
 .gap100 {
   gap: 100px;
+}
+
+.gap140{
+  gap: 140px;
 }
 
 .p_r {
@@ -1036,6 +1072,16 @@ button[type="submit"] {
 
   .cta h6{
     font-size: 32px;
+  }
+
+  .top_footer{
+    gap: 48px;
+  }
+
+  .footerMenu{
+    height: 524px;
+    column-gap: 16px;
+    width: 100%;
   }
 }
 @media (min-width: 881px) {
